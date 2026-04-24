@@ -1,55 +1,31 @@
-# ExcelJS
+# exceljsremake
 
-[![Build status](https://github.com/exceljs/exceljs/workflows/ExcelJS/badge.svg)](https://github.com/exceljs/exceljs/actions?query=workflow%3AExcelJS)
-[![Code Quality: Javascript](https://img.shields.io/lgtm/grade/javascript/g/exceljs/exceljs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/exceljs/exceljs/context:javascript)
-[![Total Alerts](https://img.shields.io/lgtm/alerts/g/exceljs/exceljs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/exceljs/exceljs/alerts)
+[![Build Status](https://github.com/sintret/exceljsremake/actions/workflows/tests.yml/badge.svg?branch=master&event=push)](https://github.com/sintret/exceljsremake/actions/workflows/tests.yml)
 
 读取，操作并写入电子表格数据和样式到 XLSX 和 JSON 文件。
 
 一个 Excel 电子表格文件逆向工程项目。
 
-# 安装
+## Fork 说明 / 归属
+
+这是原始 [`exceljs`](https://github.com/exceljs/exceljs) 项目的社区维护分支（MIT 许可）。
+
+- **NPM 包名**：`exceljsremake`（API 仍然使用 `ExcelJS`）
+- **许可证**：MIT（见 `LICENSE`）
+- **上游项目**：[`exceljs/exceljs`](https://github.com/exceljs/exceljs)
+
+## 安装
 
 ```shell
-npm install exceljs
+npm install exceljsremake
 ```
 
-# 新的功能!
+## 这个分支有什么不同？
 
-* Merged [fix: styles rendering in case when "numFmt" is present in conditional formatting rules (resolves #1814) #1815](https://github.com/exceljs/exceljs/pull/1815). <br/> Many thanks to [@andreykrupskii](https://github.com/andreykrupskii) for this contribution!
-* Merged [inlineStr cell type support #1575 #1576](https://github.com/exceljs/exceljs/pull/1576). <br/> Many thanks to [@drdmitry](https://github.com/drdmitry) for this contribution!
-* Merged [Fix parsing of boolean attributes #1849](https://github.com/exceljs/exceljs/pull/1849). <br/> Many thanks to [@bno1](https://github.com/bno1) for this contribution!
-* Merged [add optional custom auto-filter to table #1670](https://github.com/exceljs/exceljs/pull/1670). <br/> Many thanks to [@thambley](https://github.com/thambley) for this contribution!
-* Merged [Deep copy inherited style #1850](https://github.com/exceljs/exceljs/pull/1850). <br/> Many thanks to [@ikzhr](https://github.com/ikzhr) for this contribution!
-* Merged [Upgrade actions/cache and actions/setup-node #1846](https://github.com/exceljs/exceljs/pull/1846). <br/> Many thanks to [@cclauss](https://github.com/cclauss) for this contribution!
-* Merged [Check object keys in isEqual #1831](https://github.com/exceljs/exceljs/pull/1831). <br/> Many thanks to [@bno1](https://github.com/bno1) for this contribution!
-* Merged [Add v17 to testing workflow #1856](https://github.com/exceljs/exceljs/pull/1856). <br/> Many thanks to [@Siemienik](https://github.com/Siemienik) for this contribution!
-* Merged [Upgrade jszip to its latest version to date. This version does not have any vulnerability found by Snyk so far #1895](https://github.com/exceljs/exceljs/pull/1895). <br/> Many thanks to [@ValerioSevilla](https://github.com/ValerioSevilla) for this contribution!
-* Merged [Update README.md #1677](https://github.com/exceljs/exceljs/pull/1677). <br/> Many thanks to [@xjrcode](https://github.com/xjrcode) for this contribution!
-* Merged [(docs): set prototype of RegExp correctly. #1700](https://github.com/exceljs/exceljs/pull/1700). <br/> Many thanks to [@joeldenning](https://github.com/joeldenning) for this contribution!
-* Merged [Added timeouts to github actions #1733](https://github.com/exceljs/exceljs/pull/1733). <br/> Many thanks to [@alexbjorlig](https://github.com/alexbjorlig) for this contribution!
-* Merged [fix issue 1676 #1701](https://github.com/exceljs/exceljs/pull/1701). <br/> Many thanks to [@skypesky](https://github.com/skypesky) for this contribution!
-* Merged [ExcelJS/ExcelJS#2237 : Update CI Tests, Drop support for Node v8  #2242](https://github.com/exceljs/exceljs/pull/2242). <br/> Many thanks to [@Siemienik](https://github.com/Siemienik) for this contribution!
-* Merged [Fix types for getWorksheet() #2223](https://github.com/exceljs/exceljs/pull/2223). <br/> Many thanks to [@hfhchan-plb](https://github.com/hfhchan-plb) for this contribution!
-* Merged [add characters cannot be used for worksheet name #2126](https://github.com/exceljs/exceljs/pull/2126). <br/> Many thanks to [@tkm-kj](https://github.com/tkm-kj) for this contribution!
-* Merged [Fix issue #1753 Reject promise when workbook reader is writing to temporary file stream and error occurs #1756](https://github.com/exceljs/exceljs/pull/1756). <br/> Many thanks to [@pauliusg](https://github.com/pauliusg) for this contribution!
-* Merged [README.md to have correct link for Streaming XLSX #2186](https://github.com/exceljs/exceljs/pull/2186). <br/> Many thanks to [@wulfsolter](https://github.com/wulfsolter) for this contribution!
-* Merged [Added a polyfill of promise.finally to support lower versions of Firefox. #1982](https://github.com/exceljs/exceljs/pull/1982). <br/> Many thanks to [@DemoJj](https://github.com/DemoJj) for this contribution!
-* Merged [Fix read this.worksheet before assign it #1934](https://github.com/exceljs/exceljs/pull/1934). <br/> Many thanks to [@ZyqGitHub1](https://github.com/ZyqGitHub1) for this contribution!
-* Merged [chore: upgrade jszip to ^3.10.1 #2211](https://github.com/exceljs/exceljs/pull/2211). <br/> Many thanks to [@jarrod-cocoon](https://github.com/jarrod-cocoon) for this contribution!
-* Merged [fixed spelling error in README.md file #2208](https://github.com/exceljs/exceljs/pull/2208). <br/> Many thanks to [@HugoP27](https://github.com/HugoP27) for this contribution!
-* Merged [fix: Fix xlsx.writeFile() not catching error when error occurs #2244](https://github.com/exceljs/exceljs/pull/2244). <br/> Many thanks to [@zurmokeeper](https://github.com/zurmokeeper) for this contribution!
-* Merged [Improve worksheets' naming validation logic. #2257](https://github.com/exceljs/exceljs/pull/2257). <br/> Many thanks to [@Siemienik](https://github.com/Siemienik) for this contribution!
-* Merged [fix issue 2125 - spliceRows remove last row #2140](https://github.com/exceljs/exceljs/pull/2140). <br/> Many thanks to [@babu-ch](https://github.com/babu-ch) for this contribution!
-* Merged [fix: fix the loss of column attributes due to incorrect column order #2222](https://github.com/exceljs/exceljs/pull/2222). <br/> Many thanks to [@cpaiyueyue](https://github.com/cpaiyueyue) for this contribution!
-* Merged [Fix: Sheet Properties Types #2327](https://github.com/exceljs/exceljs/pull/2327). <br/> Many thanks to [@albeniraouf](https://github.com/albeniraouf) for this contribution!
-* Merged [Use node 18 LTS for tsc, and benchmark. Add node 20. to test matrix. … #2354](https://github.com/exceljs/exceljs/pull/2354). <br/> Many thanks to [@Siemienik](https://github.com/Siemienik) for this contribution!
-* Merged [Add missing tooltip attribute to CellHyperlinkValue index.d.ts #2350](https://github.com/exceljs/exceljs/pull/2350). <br/> Many thanks to [@NiklasPor](https://github.com/NiklasPor) for this contribution!
-* Merged [Increase resilience to generating large workbooks #2320](https://github.com/exceljs/exceljs/pull/2320). <br/> Many thanks to [@hfhchan-plb](https://github.com/hfhchan-plb) for this contribution!
-* Merged [repair all 'c2fo.io' links ('c2fo.github.io') #2324](https://github.com/exceljs/exceljs/pull/2324). <br/> Many thanks to [@justintunev7](https://github.com/justintunev7) for this contribution!
-* Merged [fix: fix type definitions about last column, formula values and protection #2309](https://github.com/exceljs/exceljs/pull/2309). <br/> Many thanks to [@gltjk](https://github.com/gltjk) for this contribution!
-* Merged [fix: add spinCount field for WorksheetProtection type #2284](https://github.com/exceljs/exceljs/pull/2284). <br/> Many thanks to [@damingerdai](https://github.com/damingerdai) for this contribution!
-* Merged [Add type definition for WorksheetModel.merges #2281](https://github.com/exceljs/exceljs/pull/2281). <br/> Many thanks to [@ytjmt](https://github.com/ytjmt) for this contribution!
+此分支的改动与发布记录请查看：
+
+- GitHub Releases: https://github.com/sintret/exceljsremake/releases
+- Compare changes: https://github.com/sintret/exceljsremake/compare
 
 # 贡献
 
@@ -173,7 +149,7 @@ npm install exceljs
 # 导入[⬆](#目录)<!-- Link generated with jump2header -->
 
 ```javascript
-const ExcelJS = require('exceljs');
+const ExcelJS = require('exceljsremake');
 ```
 
 ## ES5 导入[⬆](#目录)<!-- Link generated with jump2header -->
@@ -181,14 +157,14 @@ const ExcelJS = require('exceljs');
 要使用 ES5 编译代码，请使用 *dist/es5* 路径。
 
 ```javascript
-const ExcelJS = require('exceljs/dist/es5');
+const ExcelJS = require('exceljsremake/dist/es5');
 ```
 
-**注意：**ES5 版本对许多 polyfill 都具有隐式依赖，而 exceljs 不再明确添加。
-您需要在依赖项中添加 `core-js` 和 `regenerator-runtime`，并在导入 `exceljs` 之前在代码中包含以下引用：
+**注意：**ES5 版本对许多 polyfill 都具有隐式依赖，而本包不再明确添加。
+您需要在依赖项中添加 `core-js` 和 `regenerator-runtime`，并在导入 `exceljsremake` 之前在代码中包含以下引用：
 
 ```javascript
-// exceljs 所需的 polyfills
+// exceljsremake 所需的 polyfills
 require('core-js/modules/es.promise');
 require('core-js/modules/es.string.includes');
 require('core-js/modules/es.object.assign');
@@ -197,7 +173,7 @@ require('core-js/modules/es.symbol');
 require('core-js/modules/es.symbol.async-iterator');
 require('regenerator-runtime/runtime');
 
-const ExcelJS = require('exceljs/dist/es5');
+const ExcelJS = require('exceljsremake/dist/es5');
 ```
 
 对于 IE 11，您还需要一个 polyfill 以支持 unicode regex 模式。 例如，
@@ -2417,7 +2393,7 @@ workbookReader.on('error', (err) => {
 
 由于工作簿读写器的流式传输性质，因此未包括这些内容。只能使用基于文档的工作簿（有关详细信息，请参见 <a href="#创建工作簿">创建工作簿</a>）。
 
-例如，在浏览器中使用 ExcelJS 的代码可查看 github 中的<a href="https://github.com/exceljs/exceljs/tree/master/spec/browser"> spec / browser </a>文件夹。
+例如，在浏览器中使用 ExcelJS 的代码可查看本仓库的 <a href="https://github.com/sintret/exceljsremake/tree/master/spec/browser">spec/browser</a> 文件夹。
 
 ## 预捆绑[⬆](#目录)<!-- Link generated with jump2header -->
 
