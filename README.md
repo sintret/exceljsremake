@@ -18,7 +18,7 @@ This project is a community-maintained fork of the original [`exceljs`](https://
 
 If this fork helps your project and you'd like to support maintenance:
 
-- **PayPal**: https://www.paypal.me/sintret
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://www.paypal.me/sintret)
 
 # Translations
 
