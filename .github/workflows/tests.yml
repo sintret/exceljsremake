@@ -35,6 +35,9 @@ jobs:
       - name: Prepare test output directory
         run: mkdir -p spec/out
 
+      - name: Disable browser tests (CI)
+        run: touch .disable-test-browser
+
       - name: Build
         run: npm run build
 
