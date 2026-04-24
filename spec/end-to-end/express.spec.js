@@ -1,12 +1,12 @@
 const {PassThrough} = require('readable-stream');
 const express = require('express');
-const got = require('got').default;
 const testutils = require('../utils/index');
 
 const Excel = verquire('exceljs');
 
 describe('Express', () => {
   let server;
+  let got;
   before(() => {
     const app = express();
     app.get('/workbook', (req, res) => {
@@ -21,6 +21,11 @@ describe('Express', () => {
       });
     });
     server = app.listen(3003);
+  });
+
+  before(async () => {
+    // got is ESM-only on modern versions; load it via dynamic import for CJS tests.
+    ({default: got} = await import('got'));
   });
 
   after(() => {
