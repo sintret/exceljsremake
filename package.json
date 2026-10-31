@@ -1,6 +1,6 @@
 {
   "name": "exceljsremake",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
@@ -153,7 +153,7 @@
     "braces": "3.0.3",
     "diff": "9.0.0",
     "elliptic": "6.6.1",
-    "minimatch": "10.2.5",
+    "minimatch": "11.0.3",
     "puppeteer": "24.42.0",
     "serialize-javascript": "7.0.5",
     "tar": "7.5.22",
